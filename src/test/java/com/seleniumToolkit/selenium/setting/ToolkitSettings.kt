@@ -1,6 +1,7 @@
 package com.seleniumToolkit.selenium.setting
 
 import com.seleniumToolkit.selenium.framework.dataLoader.settings.*
+import com.seleniumToolkit.selenium.framework.grid.SauceLabsGrid
 import com.seleniumToolkit.selenium.framework.grid.Vendor
 import com.seleniumToolkit.selenium.framework.grid.vendorOption.sauceLabs.SauceLabsOptions
 import com.seleniumToolkit.selenium.framework.listeners.webdriver.SpeedMode
@@ -31,6 +32,19 @@ class ToolkitSettings : ToolkitSettingInterface {
      */
     override fun getRemoteGridUrl(): String? {
         return ""
+    }
+
+    /**
+     * Description: [SauceLabsGrid] of the right SauceLabs-Grid location.
+     * Since Version: 1.3.26
+     * Expired Version: -
+     */
+    override fun getRemoteGridSaucelabs(): SauceLabsGrid? {
+        return null
+        //return SauceLabsGrid.SAUCELABS_EU_CENTRAL_DATACENTER;
+        //return SauceLabsGrid.SAUCELABS_APAC_SOUTHEAST_DATACENTER;
+        //return SauceLabsGrid.SAUCELABS_HEADLESS_US_EAST_DATACENTER;
+        //return SauceLabsGrid.SAUCELABS_US_WEST_DATACENTER;
     }
 
     /**
